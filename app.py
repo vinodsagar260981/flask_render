@@ -18,6 +18,11 @@ JOBS = [
         'title': 'AI Engineer',
         'location': 'Bengaluru'
     },
+    {
+        'id':4,
+        'title': 'Prompt Engineer',
+        'location': 'Bengaluru'
+    },
 
 ]
 
