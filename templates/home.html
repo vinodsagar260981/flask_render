@@ -42,18 +42,27 @@
         </style>
     </head>
     <body>
+        {% include 'navbar.html'%}
         <div class="container">
             <h1 class="text-center mt-2 mb-4">API Career</h1>
             <img class="img-fluid" id="banner" src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?q=80&w=2532&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="no-image">
             <h2 class="text-center mt-2 mb-4">About API</h2>
-            <p class="lead">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                It has survived not only five centuries, but also the leap into electronic typesetting,
-                remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
-            </p>
+            <div class="row" style="margin-bottom:16px">
+                <div class="col-md-6">
+                        <p class="lead">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            It has survived not only five centuries, but also the leap into electronic typesetting,
+                            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                            and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                        </p>
+                </div>
+                <div class="d-none d-md-block col-md-6">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2672&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="height:320px;border-radius:4px;">
+                </div>
+            </div>
+
             <h2 class="text-center mt-2 mb-4">Open Positions</h2>
             <div>
                 {% for job in jobs %}
@@ -63,8 +72,8 @@
             <div class="text-center">
                 <button class="btn btn-primary btn-lg">contact us</button>
             </div>
-            <p class="lead">Copyrights 2025, vinod sagar</p>
-
+            {% include "footer.html" %}
         </div>
+
     </body>
 </html>
